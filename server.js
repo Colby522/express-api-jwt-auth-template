@@ -24,7 +24,6 @@ app.use('/auth', authRouter);
 app.use('/test-jwt', testJwtRouter);
 app.use('/users', userRouter);
 
-
 app.listen(3000, () => {
   console.log('The express app is ready!');
 });

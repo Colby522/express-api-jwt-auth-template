@@ -30,8 +30,6 @@ router.post('/sign-up', async (req, res) => {
     }
   });
 
-// controllers/auth.js
-
 router.post('/sign-in', async (req, res) => {
   try {
     const user = await User.findOne({ username: req.body.username });
@@ -55,6 +53,5 @@ router.post('/sign-in', async (req, res) => {
     res.status(500).json({ err: err.message });
   }
 });
-
 
 module.exports = router;

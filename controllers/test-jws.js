@@ -25,5 +25,4 @@ router.post('/verify-token', (req, res) => {
     }
   });
 
-
 module.exports = router;
